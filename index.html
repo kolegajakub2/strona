@@ -5,27 +5,26 @@
     <script src="script.js"></script>
     <link rel="shortcut icon" href="https://cdn.7tv.app/emote/61acf89fe9684edbbc392e1f/4x">
     <title>Elmoxus</title>
-    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head> 
 <body onload="ep()">
-    <div id='stream' class="stream">
-        <img onmouseover="options()" onmouseout="infoclear()"onclick="przypinka()" class="zoom" id="przypinka" src="maki.png"></img>
-        <iframe id="streamokno" class="opacity" onmouseover="flushed()" onmouseout="infoclear()"src="https://player.twitch.tv/?channel=elmoxus&muted=true%22&parent=kolegajakub2.github.io" height="92%"width="320px" frameborder="0" scrolling="no" allowfullscreen="yes"></iframe>
+<div id='stream' class="stream">
+    <img onmouseover="options()" onmouseout="infoclear()"onclick="przypinka()" id="przypinka" src="menu.png"></img>
+    <iframe id="streamokno" class="opacity" onmouseover="flushed()" onmouseout="infoclear()"src="https://player.twitch.tv/?channel=elmoxus&muted=true%22&parent=kolegajakub2.github.io" height="92%"width="320px" frameborder="0" scrolling="no" allowfullscreen="yes"></iframe>
     <div id="lista" class="listofepisodes">
-            <button onmouseover="info(1)" onmouseout="infoclear()" style="border-radius:10px 0px 0px 0px" class="button" onclick="podmiana(0)">1</button><br>
-            <button onmouseover="info(2)" onmouseout="infoclear()" class="button" onclick="podmiana(1)">2</button><br>
-            <button onmouseover="info(3)" onmouseout="infoclear()"class="button" onclick="podmiana(2)">3</button><br>
-            <button onmouseover="info(4)" onmouseout="infoclear()"class="button" onclick="podmiana(3)">4</button><br>
-            <button onmouseover="info(5)" onmouseout="infoclear()"class="button" onclick="podmiana(4)">5</button><br>
-            <button onmouseover="info(6)" onmouseout="infoclear()" class="button" onclick="podmiana(5)">6</button>
-            <button style="width:27.9px;font-size: 12px;"class="button" id="button1" onclick="screenmax()" onmouseover="size()" onmouseout="infoclear()">&#10133</button><br>
+            <button onmouseover="info(1)" onmouseout="infoclear()"  class="button" onclick="podmiana(0)">1</button>
+            <button onmouseover="info(2)" onmouseout="infoclear()" class="button" onclick="podmiana(1)">2</button>
+            <button onmouseover="info(3)" onmouseout="infoclear()"class="button" onclick="podmiana(2)">3</button>
+            <button class="button" id="button1" onclick="screenmax()" onmouseover="size()" onmouseout="infoclear()">+</button>
         </div>
-    <div class="listaobraz" >
+    <div class="listaobraz">
         <p style="color:black;opacity:0;">.</p>
         <div style="height:120px;float:left;">
-            <input onmousemove="slider()" type="range" min="1" max="520" value="320" class="slider" id="myRange">
+            <input onmousemove="slider()" type="range" min="0" max="520" value="320" class="slider" id="myRange">
         </div>
-        <div style="float:left;height:120px;"><input onmousemove="sliderchat()" min="1" max="350" value="350" id="sliderchat"class="slider" type="range"></div>
+        <div style="float:left;height:120px;">
+            <input onmousemove="sliderchat()" min="0" max="350" value="350" id="sliderchat"class="slider" type="range">
+        </div>
     </div>
 </div>
 <!-- SCIEZKA DO WRZUCENIA ODCINKA INSTRUKCJA1. Skopiowac EMBED klikajac prawym na odcinek z cda.2. Wkleic sciezke src do <iframe zmieniajac http na https.-->
@@ -35,6 +34,5 @@
 <div id="chat" class="chat">
     <iframe frameborder="0"theme="dark"scrolling="no"id="chat_embed"src="https://www.twitch.tv/embed/elmoxus/chat?darkpopout&parent=kolegajakub2.github.io"height="100%"width="100%"></iframe>
 </div>
-<!--<a href="steamcommunity.com/id/rekuseg"> <div id="copyright"></div></a> -->
 </body>
 </html>
