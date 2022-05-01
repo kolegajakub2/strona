@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" media="screen and (device-height: 600px)"/>
+    <link rel="shortcut icon" href="https://cdn.7tv.app/emote/61acf89fe9684edbbc392e1f/4x">
+    <title>elmoxus</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head> 
+<body onload="ep()">
+<div id='stream' class="stream">
+    <img onmouseover="options()" onmouseout="infoclear()"onclick="przypinka()" id="przypinka" src="menu.png"></img>
+    <iframe id="streamokno" class="opacity" onmouseover="flushed()" onmouseout="infoclear()"src="https://player.twitch.tv/?channel=elmoxus&muted=true%22&parent=kolegajakub2.github.io" height="92%"width="320px" frameborder="0" scrolling="no" allowfullscreen="yes"></iframe>
+    <div id="lista" class="listanumerki">
+            <button onmouseover="info(1)" onmouseout="infoclear()"  class="button" onclick="podmiana(0)">1</button>
+            <button onmouseover="info(2)" onmouseout="infoclear()" class="button" onclick="podmiana(1)">2</button>
+            <button class="button" id="button1" onclick="screenmax()" onmouseover="size()" onmouseout="infoclear()">+</button>
+        </div>
+    <div class="picture">
+        <p style="color:rgb(0, 0, 0);opacity:0;">.</p>
+        <div style="height:120px;float:left;">
+            <input onmousemove="slider()" type="range" min="0" max="520" value="520" class="slider" id="myRange">
+        </div>
+        <div style="float:left;height:120px;">
+            <input onmousemove="sliderchat()" min="0" max="350" value="350" id="sliderchat"class="slider" type="range">
+        </div>
+    </div>
+</div>
+<div id="film" class="animation">
+    <iframe id='animo' src=""width="100%" height="100%" style="border:none;" scrolling="no" allowfullscreen name="v2" allow="encrypted-media"></iframe>
+</div>
+<div id="chat" class="chat">
+    <iframe frameborder="0"theme="dark"scrolling="no"id="chat_embed"src="https://www.twitch.tv/embed/elmoxus/chat?darkpopout&parent=kolegajakub2.github.io"height="100%"width="100%"></iframe>
+</div>
+</body>
+</html>
