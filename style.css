@@ -81,11 +81,11 @@ body,html{
     filter:sepia(200)}
 }
 #przypinka{
-    opacity:0.8;
+    opacity:0.9;
     width:2%;
     position:absolute;
-    right:6.3%;
-    top:4.2%;
+    right:4.7%;
+    top:2.2%;
     z-index:4
 }
 .button{
@@ -96,11 +96,12 @@ body,html{
     text-align:center;
     display:inline-block;
     font-family:'Courier New', Courier, monospace;
-    font-size:15px;
+    font-size:20px;
     font-weight:700;
     margin:.5px;
     cursor:pointer;
     opacity:.8;
+    transition:all .15s
 }
 .button:hover{
     filter:sepia(1);
@@ -113,7 +114,8 @@ body,html{
 }
 .listofepisodes{
     margin-top:10%;
-    width:29px;
+    float:right;
+    width:30px;
     height:140%;
     color:#fff
 }
@@ -121,10 +123,10 @@ body,html{
     margin-top:10%;
     float:right;
     width:80px;
-    height:191px;
+    height:195px;
     background-size:10%;
     background-position:right;
-    color:#fff
+    color:rgb(255, 255, 255)
 }
 @keyframes example1{from{
     box-shadow:0 0 10px #000,0 0 10px #000,0 0 20px #000,0 0 20px #000,0 0 30px #000,0 0 30px #000,0 0 40px #000
@@ -137,7 +139,7 @@ body,html{
 }
 .slider{
     display:none;
-    fill:#000;
+    fill:rgb(0, 0, 0);
     color:-internal-light-dark(#101010,#fff);
     transform:rotate(-90deg);
     background:#000;
