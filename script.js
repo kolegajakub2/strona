@@ -1,5 +1,5 @@
 var lista=[
-           "https://www.youtube.com/embed/raVNraN7F0A",
+           "https://vider.info/embed/video/s1sxms",
            "https://ebd.cda.pl/620x368/102868640c"
           
           ];
